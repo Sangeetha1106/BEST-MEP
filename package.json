@@ -1,0 +1,18 @@
+{
+  "name": "best-mep-website",
+  "version": "1.0.0",
+  "description": "Best MEP Pvt Ltd - Luxury Animated Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -p 3000 .",
+    "dev": "npx serve -p 3000 ."
+  },
+  "keywords": [
+    "mep",
+    "contractor",
+    "luxury-website",
+    "vanilla-js"
+  ],
+  "author": "Best MEP Pvt Ltd",
+  "license": "ISC"
+}
