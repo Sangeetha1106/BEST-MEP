@@ -2,147 +2,73 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Best MEP Pvt Ltd | MEP, HVAC, Fire Fighting &amp; Civil Contractors</title>
-<meta name="description" content="Best MEP Pvt Ltd – Premier Mechanical, Electrical, Plumbing, ELV, BMS, Fire Fighting and HVAC contracting company. Engineering a New Era of Efficiency &amp; Possibility.">
+<meta name="description" content="Best MEP Pvt Ltd – Mechanical, Electrical, Plumbing, ELV, BMS, Fire Fighting and HVAC contracting company. Engineering a New Era of Efficiency &amp; Possibility.">
 <link rel="icon" href="img/logo-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=7">
 </head>
 <body>
 
-<!-- ============ LUXURY HEADER ============ -->
-<header class="site-header">
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
   <div class="container nav-wrap">
-    <a href="#home" class="brand" aria-label="Best MEP Pvt Ltd">
-      <img src="img/logo-icon.png" alt="Best MEP Icon" width="42" height="42">
-      <span>Best <b>MEP</b> Pvt Ltd</span>
+    <a href="index.html" class="brand" aria-label="Best MEP Pvt Ltd">
+      <img src="img/logo-icon.png" alt="Best MEP Pvt Ltd Logo" width="42" height="42">
+      <span class="brand-text">Best MEP Pvt Ltd</span>
     </a>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
-    <label for="nav-toggle" class="burger" aria-label="Open menu">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="burger" aria-label="Toggle navigation menu">
       <i></i><i></i><i></i>
     </label>
-    <nav class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#quality">Excellence</a>
-      <a href="#projects">Projects</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn btn-primary btn-sm">Get a Free Quote</a>
+    <div class="nav-backdrop" id="navBackdrop"></div>
+    <nav class="nav" id="mainNav">
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
 
-<!-- ============ HERO SECTION ============ -->
-<section class="hero" id="home">
-  <!-- Dynamic Ultra-HD Hero Banner Background -->
-  <div class="hero-bg-slider" id="heroBgSlider">
-    <div class="hero-slide active" style="background-image: url('img/hero-hvac-hd.jpg');" data-label="Ultra-HD HVAC &amp; Cleanroom Plant"></div>
-    <div class="hero-slide" style="background-image: url('img/hero-elec-hd.jpg');" data-label="Ultra-HD Power Substation &amp; Switchgear"></div>
-    <div class="hero-slide" style="background-image: url('img/crane.jpg');" data-label="Level Luffing Heavy Cranes Erection"></div>
-    <div class="hero-slide" style="background-image: url('img/hvac.jpg');" data-label="Chilled-Water Piping &amp; Ductwork"></div>
-    <div class="hero-bg-overlay"></div>
-  </div>
-
-  <div class="container hero-inner">
-    <!-- Active Banner Indicator Tag -->
-    <div class="hero-banner-tag" id="heroBannerTag" data-reveal="fade-up">
-      <span class="pulse-dot"></span>
-      <div>
-        <small>Active HD Engineering View</small>
-        <b id="bannerCurrentTitle">Ultra-HD HVAC &amp; Cleanroom Plant</b>
-      </div>
-    </div>
-
-    <div class="luxury-badge" data-reveal="fade-up">
-      <i></i> Global MEP &amp; Civil Engineering Contractors
-    </div>
-    <div class="hero-logo-wrapper" data-reveal="fade-up" data-delay="100">
-      <img class="hero-logo" src="img/logo-full.png" alt="Best MEP Pvt Ltd logo">
-    </div>
-    <h1 data-reveal="fade-up" data-delay="200">
-      Engineering a new era of <span class="gold-gradient-text">efficiency &amp; possibility</span>
-    </h1>
-    <p data-reveal="fade-up" data-delay="300">
-      Mechanical, Electrical, Plumbing, ELV, BMS, Fire Fighting &amp; HVAC contracting — precision design, turnkey supply, flawless installation, upgradation and commissioning, built for demanding industrial, commercial and residential environments.
-    </p>
-    <div class="hero-cta" data-reveal="fade-up" data-delay="400">
-      <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-      <a href="#projects" class="btn btn-ghost">Explore Our Work</a>
-    </div>
-
-    <!-- Live Banner Switcher Controls -->
-    <div class="hero-slider-nav" data-reveal="fade-up" data-delay="450">
-      <span class="hero-slider-label">HD Banners:</span>
-      <button class="hero-slider-btn active" data-index="0" aria-label="Switch to Ultra-HD HVAC Plant banner">01 · Ultra-HD HVAC Plant</button>
-      <button class="hero-slider-btn" data-index="1" aria-label="Switch to Ultra-HD Power Substation banner">02 · Ultra-HD Substation</button>
-      <button class="hero-slider-btn" data-index="2" aria-label="Switch to Heavy Cranes banner">03 · Naval Cranes</button>
-      <button class="hero-slider-btn" data-index="3" aria-label="Switch to Piping Systems banner">04 · Piping Systems</button>
-      <button class="hero-slider-btn" id="clarityToggleBtn" aria-label="Toggle ultra-clear photo view">👁️ Ultra-Clear</button>
-    </div>
+<!-- ============ HERO BANNER ============ -->
+<section class="hero-banner-wrap" id="home">
+  <div class="hero-banner-container">
+    <img src="img/home page banner/home page.png" alt="Smart MEP Solutions for Modern Buildings - Best MEP Pvt Ltd" class="hero-banner-img" width="1663" height="826">
     
-    <ul class="stats" data-reveal="fade-up" data-delay="500">
-      <li>
-        <b class="stat-count" data-target="8" data-suffix="">0</b>
-        <span>Service Divisions</span>
-      </li>
-      <li>
-        <b class="stat-count" data-target="16" data-suffix="+">0</b>
-        <span>Projects Completed</span>
-      </li>
-      <li>
-        <b class="stat-count" data-target="6" data-suffix="">0</b>
-        <span>Ongoing Projects</span>
-      </li>
-      <li>
-        <b class="stat-count" data-target="6" data-suffix="">0</b>
-        <span>Countries Served</span>
-      </li>
-    </ul>
+    <!-- Interactive Buttons Linking to Services & Projects -->
+    <a href="services.html" class="banner-btn-hotspot hotspot-services" aria-label="Our Services" title="Our Services"></a>
+    <a href="projects.html" class="banner-btn-hotspot hotspot-projects" aria-label="View Projects" title="View Projects"></a>
   </div>
 </section>
 
-<!-- ============ ABOUT SECTION ============ -->
+<!-- ============ ABOUT ============ -->
 <section class="section" id="about">
   <div class="container about-grid">
-    <div class="about-text" data-reveal="fade-left">
+    <div class="about-text reveal-left">
       <p class="eyebrow">About our company</p>
-      <h2>Quality, coordination and time schedule — <span class="gold-gradient-text">on every project</span></h2>
-      <blockquote>
-        “Driven by continuous technological advancement and system upgrades, modern power distribution necessitates specialized expertise and superior product quality across various fields of MEP and Services Engineering.”
-      </blockquote>
-      <p>
-        <strong>Best MEP Private Limited</strong> is a premier Mechanical, Electrical, Plumbing, ELV, BMS, Fire Fighting &amp; Air Conditioning contracting enterprise with efficient, certified engineering specialists. We serve leading industries with complete design, supply, erection / installation, modernization and commissioning.
-      </p>
-      <p>
-        We blend mechanized, state-of-the-art installation methodologies with seasoned project teams to deliver exceptional value. For the success of any flagship project, three core pillars are vital — <em>quality, coordination and time schedule</em> — executed with uncompromising precision.
-      </p>
-      <p>
-        Our Contract Services Division delivers complex, deadline-driven projects across multiple continents, forging lasting partnerships reflected in repeated engagements with Fortune-grade customers.
-      </p>
+      <h2>Quality, coordination and time schedule — on every project</h2>
+      <blockquote>“Driven by continuous technological advancement and system upgrades, modern power distribution necessitates specialized expertise and superior product quality across various fields of MEP and Services Engineering.”</blockquote>
+      <p><strong>Best MEP Private Limited</strong> is a Mechanical, Electrical, Plumbing, ELV, BMS, Fire Fighting &amp; Air Conditioning contracting company with efficient and dedicated engineering workers, serving several industries with design, supply, erection / installation, upgradation and commissioning of all Mechanical, Electrical, Plumbing, ELV, Fire Fighting &amp; HVAC systems. Our systems and services are well adapted for hot, dusty, and humid environments.</p>
+      <p>We blend mechanized and modern methods of erection and installation with trained, experienced workers to deliver economical solutions. For the success of any project, three aspects are vital — <em>quality, coordination and time schedule</em> — and highly qualified project teams execute our services accordingly.</p>
+      <p>Our Contract Services Division delivers complex, deadline-driven projects covering the complete scope of design, supply, installation, upgradation and commissioning. We are committed to long-term client relationships, reflected in the repeat business from many of our key customers.</p>
       <div class="director">
-        <img src="img/director.jpg" alt="Byeon Young Gu, Director" width="76" height="76">
-        <div>
-          <strong>Byeon Young Gu</strong>
-          <span>Director, Best MEP Pvt Ltd</span>
-        </div>
+        <img src="img/director.jpg" alt="Byeon Young Gu, Director" width="74" height="74" loading="lazy">
+        <div><strong>Byeon Young Gu</strong><span>Director, <span class="font-corsiva">Best MEP Pvt Ltd</span></span></div>
       </div>
     </div>
-    
-    <div class="about-media" data-reveal="fade-right">
-      <div class="experience-seal">
-        <b>15+</b>
-        <span>Years of<br>Mastery</span>
-      </div>
-      <img src="img/team.jpg" alt="The Best MEP project team" class="about-img-1">
-      <img src="img/toolbox.jpg" alt="Site safety briefing with workers" class="about-img-2">
+    <div class="about-media reveal-right">
+      <img src="img/team.jpg" alt="The Best MEP project team" class="about-img-1" loading="lazy">
+      <img src="img/toolbox.jpg" alt="Site safety briefing with workers" class="about-img-2" loading="lazy">
     </div>
   </div>
 </section>
@@ -150,20 +76,14 @@
 <!-- ============ VISION / MISSION ============ -->
 <section class="section section-navy" id="vision">
   <div class="container vm-grid">
-    <article class="vm-card" data-reveal="fade-up">
+    <article class="vm-card reveal delay-1">
       <h3>Our Vision</h3>
-      <p>
-        To lead the international MEP contracting industry by delivering innovative, high-caliber engineering solutions that consistently exceed customer expectations. We are committed to continuous technological evolution, powered by visionary leadership, collaborative technical teams, and unwavering integrity. Our vision steers every decision — ensuring sustainable green infrastructure, enduring partnerships, and engineering excellence across borders.
-      </p>
+      <p>To lead the MEP contracting industry by delivering innovative, high-quality solutions that consistently exceed customer expectations. We are committed to continuous improvement, powered by visionary leadership, collaborative teams, and unwavering integrity. Our vision drives every decision we make — ensuring sustainable growth, lasting relationships, and excellence in everything we do.</p>
     </article>
-    <article class="vm-card" data-reveal="fade-up" data-delay="150">
+    <article class="vm-card reveal delay-2">
       <h3>Our Mission</h3>
-      <p>
-        <strong>We are dedicated to delivering high-quality, cost-effective infrastructure by empowering motivated, highly skilled, and focused professionals.</strong>
-      </p>
-      <p>
-        We prioritize strong long-term alliances, upholding fairness, transparency, and integrity in every interaction with our employees, clients, subcontractors, and international partners. We forge sustainable relationships through uncompromised safety, timely milestones, and an intuitive understanding of client aspirations.
-      </p>
+      <p><strong>We are dedicated to delivering high-quality, cost-effective projects by empowering motivated, flexible, and focused professionals.</strong></p>
+      <p>We prioritize strong relationships, upholding fairness and integrity in every interaction with our employees, clients, subcontractors, and partners — forging long-term partnerships through excellence in quality, health and safety, timely service, and a proactive understanding of client needs.</p>
     </article>
   </div>
 </section>
@@ -171,32 +91,22 @@
 <!-- ============ SERVICES ============ -->
 <section class="section section-soft" id="services">
   <div class="container">
-    <div class="section-head" data-reveal="fade-up">
-      <p class="eyebrow">Comprehensive Capabilities</p>
-      <h2>Our Specialized <span class="gold-gradient-text">Services</span></h2>
-      <p>One unified contractor for the complete MEP &amp; Civil scope — from feasibility and supply to precision installation, testing, and lifetime handover.</p>
-    </div>
-
-    <!-- Filter Buttons -->
-    <div class="service-filters" data-reveal="fade-up">
-      <button class="service-filter-btn active" data-filter="all">All Services (8)</button>
-      <button class="service-filter-btn" data-filter="hvac">HVAC &amp; Climate</button>
-      <button class="service-filter-btn" data-filter="automation">BMS, ELV &amp; Fire</button>
-      <button class="service-filter-btn" data-filter="electrical">Electrical &amp; Plumbing</button>
-      <button class="service-filter-btn" data-filter="civil">Civil &amp; Interiors</button>
+    <div class="section-head reveal">
+      <p class="eyebrow">What we do</p>
+      <h2>Our services</h2>
+      <p>One contractor for the complete MEP scope — from design and supply to installation, testing and handover.</p>
     </div>
 
     <div class="cards">
 
-      <!-- 01 HVAC -->
-      <article class="card" data-category="hvac" data-reveal="fade-up">
+      <article class="card reveal delay-1">
         <div class="card-img-wrap">
-          <img src="img/hvac.jpg" alt="HVAC ductwork and chilled-water piping installation">
+          <img src="img/hvac.jpg" alt="HVAC ductwork and chilled-water piping installation" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">01 · Climate Control</span>
+          <span class="tag">01</span>
           <h3>HVAC System</h3>
-          <p>Complete installation and commissioning of heating, ventilation and air-conditioning systems as per world-class project standards.</p>
+          <p>Complete installation and commissioning of heating, ventilation and air-conditioning systems as per project design.</p>
           <details>
             <summary>View scope</summary>
             <h4>Installation</h4>
@@ -208,180 +118,173 @@
             </ul>
             <h4>Commissioning</h4>
             <ul>
-              <li>Testing of heating, cooling and airflow dynamics</li>
+              <li>Testing of heating, cooling and airflow</li>
               <li>Air and water balancing</li>
-              <li>Controls &amp; automation verification</li>
+              <li>Controls &amp; automation checks</li>
               <li>Compliance, documentation and client training</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 02 BMS -->
-      <article class="card" data-category="automation" data-reveal="fade-up" data-delay="100">
+      <article class="card reveal delay-2">
         <div class="card-img-wrap">
-          <img src="img/bms1.jpg" alt="Building management system field devices">
+          <img src="img/bms1.jpg" alt="Building management system field devices" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">02 · Intelligent Systems</span>
+          <span class="tag">02</span>
           <h3>Building Management System</h3>
-          <p>Integration of intelligent automated controls that monitor and orchestrate a building’s mechanical, electrical and electromechanical services.</p>
+          <p>Integration of automated controls that manage a building’s mechanical, electrical and electromechanical services.</p>
           <details>
             <summary>View scope</summary>
             <h4>Installation</h4>
             <ul>
-              <li>Sensors, microcontrollers, actuators &amp; control panels</li>
-              <li>Integration of HVAC, lighting, fire safety, security and energy telemetry</li>
-              <li>High-speed wiring and networking of all BMS field devices</li>
+              <li>Sensors, controllers, actuators &amp; control panels</li>
+              <li>Integration of HVAC, lighting, fire safety, security and energy management</li>
+              <li>Wiring and networking of all BMS devices</li>
             </ul>
             <h4>Commissioning</h4>
             <ul>
               <li>Component and system-wide functional testing</li>
               <li>Sensor calibration and subsystem validation</li>
-              <li>Facility engineering team training &amp; operational handover</li>
+              <li>Facility team training, documentation &amp; handover</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 03 ELV -->
-      <article class="card" data-category="automation" data-reveal="fade-up" data-delay="200">
+      <article class="card reveal delay-3">
         <div class="card-img-wrap">
-          <img src="img/bms2.jpg" alt="Low-voltage panel and wall-mounted services">
+          <img src="img/bms2.jpg" alt="Low-voltage panel and wall-mounted services" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">03 · Low Voltage</span>
+          <span class="tag">03</span>
           <h3>ELV Systems</h3>
-          <p>Setup and seamless integration of extra-low-voltage systems for enterprise communication, physical security and automation.</p>
+          <p>Setup and integration of extra-low-voltage systems (below 50V) for communication, safety and automation.</p>
           <details>
             <summary>View scope</summary>
             <ul>
-              <li>CCTV surveillance &amp; biometric access control</li>
-              <li>Fire alarm and precision detection systems</li>
-              <li>Public address &amp; voice evacuation networks</li>
-              <li>Building automation &amp; energy management</li>
-              <li>Structured optical cabling &amp; high-capacity data networks</li>
-              <li>Audio-visual multimedia systems &amp; intercoms</li>
+              <li>CCTV surveillance &amp; access control</li>
+              <li>Fire alarm and detection systems</li>
+              <li>Public address &amp; voice evacuation</li>
+              <li>Building automation &amp; control</li>
+              <li>Structured cabling &amp; data networks</li>
+              <li>Audio-visual systems &amp; intercoms</li>
             </ul>
-            <p class="note">Commissioning includes full functional telemetry testing, communication verification, and handover certification.</p>
+            <p class="note">Commissioning includes functional testing, communication verification, end-user training and certification of system readiness.</p>
           </details>
         </div>
       </article>
 
-      <!-- 04 FIRE FIGHTING -->
-      <article class="card" data-category="automation" data-reveal="fade-up" data-delay="300">
+      <article class="card reveal delay-4">
         <div class="card-img-wrap">
-          <img src="img/fire.jpg" alt="Fire fighting pipework in a large building">
+          <img src="img/fire.jpg" alt="Fire fighting pipework in a large building" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">04 · Life Safety</span>
-          <h3>Fire Fighting &amp; Alarm</h3>
-          <p>Design, supply, installation, hydrostatic testing and statutory maintenance of life safety fire protection and alarm networks.</p>
+          <span class="tag">04</span>
+          <h3>Fire Fighting &amp; Fire Alarm</h3>
+          <p>Design, supply, installation, testing and maintenance of fire protection and alarm systems.</p>
           <details>
             <summary>View scope</summary>
             <ul>
-              <li>Design &amp; engineering to NFPA, NBC and local authority standards</li>
-              <li>Heavy-duty fire pumps, sprinklers, hydrants, hoses &amp; extinguishers</li>
-              <li>Piping, sprinkler and hydrant loop system erection</li>
-              <li>Multi-criteria smoke / heat / flame detectors, call points &amp; sirens</li>
-              <li>Seamless integration with building BMS / emergency response</li>
-              <li>Full pressure testing, commissioning and periodic maintenance</li>
+              <li>Design &amp; engineering to relevant codes and standards</li>
+              <li>Fire pumps, sprinklers, hydrants, hoses, extinguishers</li>
+              <li>Piping, sprinkler and hydrant system erection</li>
+              <li>Smoke / heat / flame detectors, call points, panels, sirens &amp; strobes</li>
+              <li>Integration with BMS / emergency response</li>
+              <li>Testing, commissioning and periodic maintenance</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 05 ELECTRICAL -->
-      <article class="card" data-category="electrical" data-reveal="fade-up">
+      <article class="card reveal delay-1">
         <div class="card-img-wrap">
-          <img src="img/elec1.jpg" alt="Electrical cabling and bus duct work">
+          <img src="img/elec1.jpg" alt="Electrical cabling and bus duct work" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">05 · Power Distribution</span>
+          <span class="tag">05</span>
           <h3>Electrical Works</h3>
-          <p>Turnkey erection and commissioning of heavy-duty power distribution networks from high-tension substations to refined lighting fixtures.</p>
+          <p>Erection and commissioning of power distribution from HT to final lighting.</p>
           <details>
             <summary>View scope</summary>
             <ul>
-              <li>33KV transformers and HT switchgear panels</li>
-              <li>Industrial DG sets with synchronized auxiliaries</li>
-              <li>Main switchboards, sub-distribution, relay DBs &amp; control cubicles</li>
-              <li>Overhead &amp; underground heavy power cable trenching</li>
-              <li>High-amperage industrial sandwich bus ducts</li>
-              <li>Perforated cable trays and automated trunking</li>
-              <li>Architectural indoor and high-mast outdoor illumination</li>
+              <li>33KV transformers and HT panels</li>
+              <li>DG sets with auxiliaries</li>
+              <li>Electrical switchboards; Main, Sub, Relay DB and control panels</li>
+              <li>Overhead &amp; underground electrical installations</li>
+              <li>Industrial bus ducts</li>
+              <li>Trays and trunking</li>
+              <li>Indoor and outdoor lighting systems</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 06 PLUMBING & WTP/STP -->
-      <article class="card" data-category="electrical" data-reveal="fade-up" data-delay="100">
+      <article class="card reveal delay-2">
         <div class="card-img-wrap">
-          <img src="img/plumb1.jpg" alt="Plumbing fixtures and pipe installation">
+          <img src="img/plumb1.jpg" alt="Plumbing fixtures and pipe installation" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">06 · Water Engineering</span>
+          <span class="tag">06</span>
           <h3>Plumbing, WTP &amp; STP</h3>
-          <p>Comprehensive water supply, drainage and sanitary systems, coupled with advanced water and sewage treatment processing plants.</p>
+          <p>Water supply, drainage and sanitary systems, plus water and sewage treatment plants.</p>
           <details>
             <summary>View scope</summary>
             <ul>
-              <li>GI / CPVC / PPR / HDPE piping networks engineered to precision</li>
-              <li>Hydro-pneumatic transfer &amp; booster pumps with smart control</li>
-              <li>Reservoir connections &amp; high-pressure hydrostatic testing</li>
-              <li>UPVC / cast iron acoustic soil &amp; waste drainage lines</li>
-              <li><b>WTP:</b> Raw water buffer tanks, PSF &amp; ACF, softeners, RO, UV/chlorination</li>
-              <li><b>STP:</b> Screen chambers, equalization, MBR filtration, disinfection &amp; sludge dewatering</li>
+              <li>GI / CPVC / PPR / HDPE pipe layout as per drawings</li>
+              <li>Transfer &amp; booster pumps with control panels</li>
+              <li>Tank connections, hydrostatic testing</li>
+              <li>UPVC / cast iron soil &amp; waste lines, traps, fixtures</li>
+              <li><b>WTP:</b> raw water tank, PSF &amp; ACF, softener / RO, chlorination / UV, control panel</li>
+              <li><b>STP:</b> screen &amp; grit chambers, equalization tank, filtration, disinfection, sludge dewatering</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 07 CIVIL -->
-      <article class="card" data-category="civil" data-reveal="fade-up" data-delay="200">
+      <article class="card reveal delay-3">
         <div class="card-img-wrap">
-          <img src="img/civil1.jpg" alt="Reinforcement and slab work at a construction site">
+          <img src="img/civil1.jpg" alt="Reinforcement and slab work at a construction site" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">07 · Structural Excellence</span>
+          <span class="tag">07</span>
           <h3>Civil Construction</h3>
-          <p>Robust, durable, and sustainable concrete and steel structures — spanning architectural concept and foundation through handover.</p>
+          <p>Safe, durable and sustainable structures — from concept and feasibility to handover and maintenance.</p>
           <details>
             <summary>View scope</summary>
-            <h4>Building Construction</h4>
+            <h4>Building construction</h4>
             <ul>
-              <li>Industrial factories, commercial towers &amp; residential complexes</li>
-              <li>Heavy RCC foundations, pre-engineered steel &amp; composite structures</li>
-              <li>Precision masonry, plastering, high-load industrial flooring &amp; waterproofing</li>
+              <li>Residential, commercial and industrial buildings</li>
+              <li>RCC, steel or composite structures</li>
+              <li>Masonry, plastering, flooring, finishing, roofing, waterproofing</li>
             </ul>
             <h4>Infrastructure</h4>
             <ul>
-              <li>Heavy-duty concrete roads, pavements, stormwater drainage &amp; culverts</li>
-              <li>Retaining structures, boundary walls, kerbs, logistics parking &amp; paving</li>
+              <li>Roads, pavements, drainage, culverts, retaining structures</li>
+              <li>Boundary walls, footpaths, kerb stones, parking &amp; landscaping</li>
             </ul>
           </details>
         </div>
       </article>
 
-      <!-- 08 INTERIOR -->
-      <article class="card" data-category="civil" data-reveal="fade-up" data-delay="300">
+      <article class="card reveal delay-4">
         <div class="card-img-wrap">
-          <img src="img/int1.jpg" alt="Finished office reception interior">
+          <img src="img/int1.jpg" alt="Finished office reception interior" loading="lazy">
         </div>
         <div class="card-body">
-          <span class="tag">08 · Spatial Design</span>
+          <span class="tag">08</span>
           <h3>Interior Designing</h3>
-          <p>Bespoke, timeless, and functional environments crafted for corporate headquarters, luxury residential suites, and commercial hubs.</p>
+          <p>Functional, timeless spaces for residential, commercial and institutional projects.</p>
           <details>
             <summary>View scope</summary>
             <ul>
-              <li>Turnkey interior architecture &amp; ergonomic space planning</li>
-              <li>Photorealistic 2D &amp; 3D visualization (AutoCAD, SketchUp, Lumion)</li>
-              <li>Exclusive material selection &amp; harmonious chromatic styling</li>
-              <li>Custom architectural lighting, acoustic ceilings &amp; bespoke joinery</li>
-              <li>Full turnkey fit-out execution with end-to-end site coordination</li>
-              <li>Budgeting, vendor procurement, and meticulous milestone tracking</li>
+              <li>Interior design &amp; space planning</li>
+              <li>2D &amp; 3D visualization (AutoCAD, SketchUp, Lumion, Photoshop)</li>
+              <li>Material selection &amp; colour coordination</li>
+              <li>Lighting &amp; furniture design</li>
+              <li>Turnkey project execution</li>
+              <li>Client consultation, vendor &amp; site coordination, budgeting</li>
             </ul>
           </details>
         </div>
@@ -394,65 +297,44 @@
 <!-- ============ PROCESS + QUALITY ============ -->
 <section class="section" id="quality">
   <div class="container two-col">
-    <div data-reveal="fade-left">
-      <p class="eyebrow">Quality Assurance</p>
-      <h2>Excellence in <span class="gold-gradient-text">every milestone</span></h2>
-      <p>
-        We are unwaveringly committed to delivering high-performance engineering solutions and ongoing maintenance services that consistently set industry benchmarks. Our team executes standardized quality procedures, supported by continuous skill-enhancement and international safety protocols.
-      </p>
+    <div class="reveal-left">
+      <p class="eyebrow">Quality policy</p>
+      <h2>Excellence in every project</h2>
+      <p>We are committed to delivering high-quality engineering solutions and maintenance services that exceed customer expectations. Our team follows systematic business processes to ensure excellence in every project, and we continuously invest in training and developing our people.</p>
       <ul class="ticks">
-        <li>Quality objectives and metrics defined, tracked, and upgraded on every project lifecycle</li>
-        <li>Rigorous multi-stage quality audits and third-party operational reviews</li>
-        <li>Generous deployment of modern specialized tooling, calibrated testing kits &amp; safety gear</li>
-        <li>A proactive quality management methodology emphasizing zero rework and continuous optimization</li>
+        <li>Quality objectives and targets set, reviewed and updated annually</li>
+        <li>Regular quality audits and operational reviews</li>
+        <li>Human, financial and technical resources allocated to achieve our goals</li>
+        <li>A robust quality management system with continuous improvement</li>
       </ul>
     </div>
-    
-    <div class="panel" data-reveal="fade-right">
-      <h3>Typical Site Organization</h3>
+    <div class="panel reveal-right">
+      <h3>Typical site organization</h3>
       <ul class="chips">
         <li>Project Manager</li>
         <li>Planning Engineer</li>
         <li>Electrical Site Engineer</li>
         <li>Mechanical Site Engineer</li>
         <li>Billing Engineer</li>
-        <li>Safety / QA/QC Engineer</li>
-        <li>Store In-Charge</li>
-        <li>Senior Supervisors</li>
-        <li>Logistics Specialists</li>
-        <li>Certified Electricians &amp; Welders</li>
+        <li>Safety / Quality Engineer</li>
+        <li>Store In-charge</li>
+        <li>Supervisors</li>
+        <li>Store Helpers</li>
+        <li>Electrician Helpers / Welders</li>
       </ul>
-      <p class="note">Deploying certified multidisciplinary engineers, master supervisors, and specialized technical workforce according to project scale.</p>
+      <p class="note">Site engineers, supervisors, electricians &amp; support staff as required at site.</p>
     </div>
   </div>
 
   <div class="container">
-    <h3 class="steps-title" data-reveal="fade-up">Our Civil &amp; Project Execution Roadmap</h3>
+    <h3 class="steps-title reveal">Our civil &amp; project process</h3>
     <ol class="steps">
-      <li data-reveal="fade-up" data-delay="0">
-        <b>Concept &amp; Feasibility</b>
-        <span>Topographic site analysis, environmental evaluation, preliminary architecture and capital budgeting</span>
-      </li>
-      <li data-reveal="fade-up" data-delay="100">
-        <b>Design &amp; Estimation</b>
-        <span>Detailed structural / MEP calculations, BIM coordination, shop drawings and itemized BOQ estimation</span>
-      </li>
-      <li data-reveal="fade-up" data-delay="200">
-        <b>Procurement &amp; Mobilization</b>
-        <span>Sourcing tier-1 approved equipment, certified raw materials, machinery mobilization and site setup</span>
-      </li>
-      <li data-reveal="fade-up" data-delay="300">
-        <b>Construction &amp; Erection</b>
-        <span>Civil groundwork, structural framework, MEP conduit laying, ductwork, busway and equipment erection</span>
-      </li>
-      <li data-reveal="fade-up" data-delay="400">
-        <b>Testing &amp; Commissioning</b>
-        <span>Hydrostatic testing, insulation resistance, air/water balancing, BMS telemetry and safety certifications</span>
-      </li>
-      <li data-reveal="fade-up" data-delay="500">
-        <b>Handover &amp; Warranty</b>
-        <span>As-built drawings, statutory approvals, operations manuals, client staff training and maintenance lifecycle</span>
-      </li>
+      <li class="reveal delay-1"><b>Concept &amp; Feasibility</b><span>Site analysis, design concept and budget planning</span></li>
+      <li class="reveal delay-2"><b>Design &amp; Estimation</b><span>Structural drawings and cost estimation</span></li>
+      <li class="reveal delay-3"><b>Procurement &amp; Mobilization</b><span>Sourcing materials, equipment and manpower</span></li>
+      <li class="reveal delay-1"><b>Construction</b><span>Civil, structural and finishing works</span></li>
+      <li class="reveal delay-2"><b>Testing &amp; Commissioning</b><span>Verification of strength, durability and quality</span></li>
+      <li class="reveal delay-3"><b>Handover &amp; Maintenance</b><span>Documentation, warranty and ongoing service</span></li>
     </ol>
   </div>
 </section>
@@ -460,14 +342,14 @@
 <!-- ============ PROJECTS ============ -->
 <section class="section section-soft" id="projects">
   <div class="container">
-    <div class="section-head" data-reveal="fade-up">
-      <p class="eyebrow">Our Global Footprint</p>
-      <h2>Prestigious Projects <span class="gold-gradient-text">Delivered</span></h2>
-      <p>A proven track record of landmark MEP installations across India, Sri Lanka, South Korea, Singapore, Mauritius and the Maldives.</p>
+    <div class="section-head reveal">
+      <p class="eyebrow">Our portfolio</p>
+      <h2>Projects worked</h2>
+      <p>Delivered across India, Sri Lanka, South Korea, Singapore, Mauritius and the Maldives.</p>
     </div>
 
     <div class="proj-grid">
-      <div class="proj" data-reveal="fade-up">
+      <div class="proj reveal delay-1">
         <h3>India, Sri Lanka &amp; South Korea</h3>
         <ol>
           <li>Level Luffing Cranes Erection <em>MDL – Indian Naval Ship Yard</em></li>
@@ -477,30 +359,27 @@
           <li>Hyundai EP Plant – Dust and Smoke collectors</li>
           <li>Chiller plant Erection, Oragadam <em>MANDO (Mando Hella)</em></li>
           <li>Fume and Exhaust duct erection, Tada <em>LG Polymer</em></li>
-          <li>Goliath Cranes <em>Hambantota Shipyard, Sri Lanka</em></li>
+          <li>Goliath Cranes <em>Hambantota shipyard</em></li>
           <li>Government Medical College, Namakkal <em>PWD</em></li>
           <li>Faurecia Automotive Seating India Pvt Ltd <em>Sriperumbudur</em></li>
         </ol>
       </div>
-      
       <div class="proj-stack">
-        <div class="proj" data-reveal="fade-up" data-delay="100">
+        <div class="proj reveal delay-2">
           <h3>Singapore</h3>
           <ol>
             <li>Woodlands Health Campus <em>MOH Singapore</em></li>
-            <li>CAPITASpring 51-storey Commercial Skyscraper <em>Dragages</em></li>
+            <li>CAPITASpring 51-storey Commercial Building <em>Dragages</em></li>
           </ol>
         </div>
-        
-        <div class="proj" data-reveal="fade-up" data-delay="150">
+        <div class="proj reveal delay-2">
           <h3>Mauritius</h3>
           <ol>
             <li>New Supreme Court of Mauritius</li>
             <li>Mauritius Metro Rail <em>L&amp;T / NBCC</em></li>
           </ol>
         </div>
-        
-        <div class="proj" data-reveal="fade-up" data-delay="200">
+        <div class="proj reveal delay-3">
           <h3>Maldives</h3>
           <ol>
             <li>Maldivian National University – IMFF</li>
@@ -508,15 +387,14 @@
           </ol>
         </div>
       </div>
-      
-      <div class="proj proj-ongoing" data-reveal="fade-up" data-delay="250">
-        <h3>Ongoing Projects</h3>
+      <div class="proj proj-ongoing reveal delay-3">
+        <h3>Ongoing projects</h3>
         <ol>
           <li>New Terminal Building <em>Rajahmundry Airport, India</em></li>
           <li>New Collectorate Campus <em>Ranipet, India</em></li>
           <li>New Government Medical College <em>Krishnagiri, India</em></li>
           <li>Hyundai Engineering Plastic <em>Pune, India</em></li>
-          <li>Gan International Airport <em>Addu City, Maldives</em></li>
+          <li>Gan International Airport <em>Maldives</em></li>
           <li>Pondy Chemical Limited <em>Thervakandikai, India</em></li>
         </ol>
       </div>
@@ -527,150 +405,118 @@
 <!-- ============ GALLERY ============ -->
 <section class="section" id="gallery">
   <div class="container">
-    <div class="section-head" data-reveal="fade-up">
-      <p class="eyebrow">On Site Execution</p>
-      <h2>Site &amp; Project <span class="gold-gradient-text">Photographs</span></h2>
-      <p>Visual records of our precision installations, cable management, industrial ducting and architectural finishes. Click any image to view in high definition.</p>
+    <div class="section-head reveal">
+      <p class="eyebrow">On site</p>
+      <h2>Project &amp; site photographs</h2>
     </div>
-    
-    <div class="gallery" data-reveal="fade-up">
-      <div class="gallery-item">
-        <img src="img/tray.jpg" alt="Colour-coded cable trays and services">
-        <div class="gallery-overlay"><span>Colour-Coded Cable Trays</span></div>
+    <div class="gallery">
+      <div class="gallery-item reveal delay-1" data-src="img/tray.jpg" data-caption="Colour-coded cable trays and services installation">
+        <img src="img/tray.jpg" alt="Colour-coded cable trays and services" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
-      <div class="gallery-item">
-        <img src="img/yellow.jpg" alt="Inspection of equipment and yellow piping">
-        <div class="gallery-overlay"><span>Precision Piping &amp; Equipment</span></div>
+      <div class="gallery-item reveal delay-2" data-src="img/yellow.jpg" data-caption="Inspection of heavy equipment and yellow utility piping">
+        <img src="img/yellow.jpg" alt="Inspection of equipment and yellow piping" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
-      <div class="gallery-item">
-        <img src="img/duct.jpg" alt="Dust collector and ducting installation">
-        <div class="gallery-overlay"><span>Industrial Dust Collector &amp; Ducting</span></div>
+      <div class="gallery-item reveal delay-3" data-src="img/duct.jpg" data-caption="Dust collector system and ducting installation">
+        <img src="img/duct.jpg" alt="Dust collector and ducting installation" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
-      <div class="gallery-item">
-        <img src="img/cable.jpg" alt="Cable laying by site team">
-        <div class="gallery-overlay"><span>Site Cable Laying &amp; Termination</span></div>
+      <div class="gallery-item reveal delay-1" data-src="img/cable.jpg" data-caption="High-tension cable laying and jointing by site team">
+        <img src="img/cable.jpg" alt="Cable laying by site team" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
-      <div class="gallery-item">
-        <img src="img/elec2.jpg" alt="Electrical switchgear room">
-        <div class="gallery-overlay"><span>Electrical Switchgear &amp; Substation</span></div>
+      <div class="gallery-item reveal delay-2" data-src="img/elec2.jpg" data-caption="Main electrical switchgear room and distribution panels">
+        <img src="img/elec2.jpg" alt="Electrical switchgear room" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
-      <div class="gallery-item">
-        <img src="img/civil3.jpg" alt="Residential civil works">
-        <div class="gallery-overlay"><span>Premium Civil Construction</span></div>
+      <div class="gallery-item reveal delay-3" data-src="img/civil3.jpg" data-caption="Residential and commercial civil structural works">
+        <img src="img/civil3.jpg" alt="Residential civil works" loading="lazy">
+        <div class="gallery-overlay"><span>View Full Photo</span></div>
       </div>
     </div>
-    
-    <div class="gallery-sheets" data-reveal="fade-up" data-delay="150">
-      <img src="img/g1.jpg" alt="Project site compilation - Sheet 1">
-      <img src="img/g2.jpg" alt="Project site compilation - Sheet 2">
-      <img src="img/g3.jpg" alt="Project site compilation - Sheet 3">
+    <div class="gallery-sheets">
+      <div class="sheet-item reveal delay-1" data-src="img/g1.jpg" data-caption="Site project execution – HVAC, electrical and plumbing work montage">
+        <img src="img/g1.jpg" alt="Collage of project site photographs" loading="lazy">
+      </div>
+      <div class="sheet-item reveal delay-2" data-src="img/g2.jpg" data-caption="Site project execution – Fire safety, ducting and plant commissioning">
+        <img src="img/g2.jpg" alt="Collage of project site photographs" loading="lazy">
+      </div>
+      <div class="sheet-item reveal delay-3" data-src="img/g3.jpg" data-caption="Site project execution – Structural works, cable trays and finishing">
+        <img src="img/g3.jpg" alt="Collage of project site photographs" loading="lazy">
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ============ CTA BANNER ============ -->
-<section class="cta">
+<!-- ============ CTA ============ -->
+<section class="cta reveal">
   <div class="container cta-inner">
-    <div data-reveal="fade-left">
-      <h2>Have a Flagship Project in Mind?</h2>
-      <p>Connect directly with our engineering directors to discuss your MEP, HVAC, fire safety, or turnkey civil requirements.</p>
+    <div>
+      <h2>Have a project in mind?</h2>
+      <p>Talk to our team about your MEP, HVAC, fire fighting or civil requirements.</p>
     </div>
-    <div data-reveal="fade-right">
-      <a href="#contact" class="btn btn-light">Get a Free Consultation</a>
-    </div>
+    <a href="contact.html" class="btn btn-light">Get a free quote</a>
   </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
 <section class="section" id="contact">
   <div class="container contact-grid">
-    <div data-reveal="fade-left">
-      <p class="eyebrow">Connect With Us</p>
-      <h2>Let’s build something <span class="gold-gradient-text">that lasts</span></h2>
-      
+    <div class="reveal-left">
+      <p class="eyebrow">Contact us</p>
+      <h2>Let’s build something that lasts</h2>
       <ul class="contact-list">
-        <li>
-          <b>Email Enquiries</b>
-          <a href="mailto:bestmepengg@gmail.com">bestmepengg@gmail.com</a>
-        </li>
-        <li>
-          <b>Phone Lines</b>
-          <a href="tel:+919942252550">+91 99422 52550</a> · <a href="tel:+919692774642">+91 96927 74642</a>
-        </li>
-        <li>
-          <b>Official Portal</b>
-          <a href="http://www.bestmepengg.com" target="_blank" rel="noopener">www.bestmepengg.com</a>
-        </li>
-        <li>
-          <b>Head Office</b>
-          Best MEP Pvt Ltd, No. 85, 3rd Cross Street, Santro City, Sembarambakkam, Chennai, Tamil Nadu – 600124
-        </li>
+        <li><b>Email</b><a href="mailto:bestmepengg@gmail.com">bestmepengg@gmail.com</a></li>
+        <li><b>Phone</b><a href="tel:+919942252550">+91 99422 52550</a> · <a href="tel:+919692774642">+91 96927 74642</a></li>
+        <li><b>Website</b><a href="http://www.bestmepengg.com" target="_blank" rel="noopener">www.bestmepengg.com</a></li>
+        <li><b>Head office</b>Best MEP Pvt Ltd, No. 85, 3rd Cross Street, Santro City, Sembarambakkam, Chennai, Tamil Nadu – 600124</li>
       </ul>
 
-      <!-- Luxury Interactive Form -->
-      <form class="form" id="contactForm">
+      <form class="form" id="contactForm" action="mailto:bestmepengg@gmail.com" method="post" enctype="text/plain">
         <div class="row">
-          <label>
-            Your Full Name *
-            <input type="text" name="name" placeholder="e.g. Alexander Vance" required>
-          </label>
-          <label>
-            Phone Number
-            <input type="tel" name="phone" placeholder="+91 / +94 / +82...">
-          </label>
+          <label>Name<input type="text" name="name" required placeholder="Your full name"></label>
+          <label>Phone<input type="tel" name="phone" placeholder="+91 98765 43210"></label>
         </div>
-        <label>
-          Corporate Email *
-          <input type="email" name="email" placeholder="name@company.com" required>
-        </label>
-        <label>
-          Required Engineering Scope
+        <label>Email<input type="email" name="email" required placeholder="you@company.com"></label>
+        <label>Service needed
           <select name="service">
-            <option>HVAC &amp; Cleanroom Systems</option>
-            <option>Building Management Systems (BMS)</option>
-            <option>Extra-Low Voltage (ELV) Systems</option>
-            <option>Fire Fighting &amp; Life Safety Networks</option>
-            <option>Electrical High-Tension &amp; Power Distribution</option>
-            <option>Plumbing, WTP &amp; STP Water Treatment</option>
-            <option>Turnkey Civil Construction</option>
-            <option>Interior Architecture &amp; Spatial Design</option>
+            <option>HVAC System</option>
+            <option>Building Management System (BMS)</option>
+            <option>ELV Systems</option>
+            <option>Fire Fighting &amp; Fire Alarm</option>
+            <option>Electrical Works</option>
+            <option>Plumbing / WTP / STP</option>
+            <option>Civil Construction</option>
+            <option>Interior Designing</option>
           </select>
         </label>
-        <label>
-          Project Brief / Message
-          <textarea name="message" rows="4" placeholder="Describe project scale, location, and timeline requirements..."></textarea>
+        <label>Message
+          <textarea name="message" rows="4" placeholder="Tell us about your project requirements, location, and timeline..."></textarea>
         </label>
-        <button class="btn btn-primary" type="submit">Submit Project Enquiry</button>
+        <button type="submit" class="btn btn-primary">Send inquiry</button>
       </form>
     </div>
 
-    <!-- Global Network & Sister Concerns -->
-    <div class="offices" data-reveal="fade-right">
-      <h3>International Offices</h3>
+    <div class="offices reveal-right">
+      <h3>Other office branches</h3>
       <div class="office">
-        <b>Thoori Lanka Pvt Ltd</b>
-        Vattapallai, Mulliyavalai, Mullaitivu, Sri Lanka – 42000<br>
-        <a href="tel:+94710891533">+94 710 891 533</a>
+        <b>South Korea</b>
+        #402, 10-8, 201 Beon-gil, Saebyeokgol-ro, Dong-gu, Incheon, South Korea<br>
+        <a href="tel:+821099238384">+82 10 9923 8384</a> · <a href="mailto:ygbyeon@naver.com">ygbyeon@naver.com</a>
       </div>
       <div class="office">
-        <b>Byeon Engineering Const Pvt Ltd</b>
-        Plot No. 55, 2nd Street, Samayapuram Nagar, Chennai, Tamil Nadu – 600116<br>
-        <a href="tel:+919790732265">+91 97907 32265</a>
-      </div>
-
-      <h3>Sister Concerns</h3>
-      <div class="office">
-        <b>GKV Infra Project Pvt Ltd</b>
-        #82, N.G.N Street, New Sidhapudur, Coimbatore, Tamil Nadu – 641044<br>
-        <a href="tel:+918608600018">+91 86086 00018</a>
+        <b>Mauritius</b>
+        St. Joseph Road, Terre Rouge, Mauritius<br>
+        <a href="tel:+23057106460">+230 5710 6460</a> · <a href="mailto:mdaliali1102@gmail.com">mdaliali1102@gmail.com</a>
       </div>
       <div class="office">
-        <b>Byeon Engineering Construction (South Korea)</b>
-        #527-80 (25/1) Guam-dong, Yuseong-gu, Daejeon Metropolitan, Republic of Korea<br>
-        <a href="tel:+821064777474">+82 10 6477 7474</a> · <a href="mailto:byen7426@yahoo.co.kr">byen7426@yahoo.co.kr</a>
+        <b>Maldives</b>
+        H-Snowy, No. 20037, Lonuziyaarai Magu, Male, Republic of Maldives<br>
+        <a href="tel:+9607998632">+960 799 8632</a> · <a href="mailto:sales.kandufaruge@gmail.com">sales.kandufaruge@gmail.com</a>
       </div>
 
-      <h3>Community Services Trust</h3>
+      <h3>Our services trust</h3>
       <div class="office">
         <b>Love N Care Trust</b>
         No. 85, 3rd Cross Street, Santro City, Sembarambakkam, Chennai, Tamil Nadu – 600124<br>
@@ -684,15 +530,293 @@
 
 <!-- ============ FOOTER ============ -->
 <footer class="footer">
-  <div class="container footer-inner">
-    <a href="#home" class="brand brand-light">
-      <img src="img/logo-icon.png" alt="Best MEP Icon" width="38" height="38">
-      <span>Best <b>MEP</b> Pvt Ltd</span>
-    </a>
-    <p>Engineering a New Era of Efficiency &amp; Possibility · Worldwide Execution</p>
-    <p class="copy">© 2026 Best MEP Pvt Ltd. All rights reserved. Designed with pure high-performance web engineering.</p>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Col 1: Brand & Overview -->
+      <div class="footer-col">
+        <div class="footer-brand-wrap">
+          <a href="index.html" class="brand brand-light">
+            <img src="img/logo-icon.png" alt="Best MEP Pvt Ltd Logo" width="48" height="48" loading="lazy">
+            <span class="brand-text">Best MEP Pvt Ltd</span>
+          </a>
+        </div>
+        <span class="footer-tagline">Engineering a New Era of Efficiency</span>
+        <p class="footer-desc">Specialized Mechanical, Electrical, Plumbing, Fire Fighting, ELV &amp; HVAC contracting company delivering high-standard industrial, commercial, and infrastructure engineering.</p>
+      </div>
+
+      <!-- Col 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="projects.html">Landmark Projects</a></li>
+          <li><a href="gallery.html">Work Gallery</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Services -->
+      <div class="footer-col">
+        <h4>Core Services</h4>
+        <ul class="footer-links">
+          <li><a href="services.html#services">HVAC &amp; Ventilation</a></li>
+          <li><a href="services.html#services">Electrical &amp; Substation</a></li>
+          <li><a href="services.html#services">Fire Fighting Systems</a></li>
+          <li><a href="services.html#services">Plumbing &amp; Sanitary</a></li>
+          <li><a href="services.html#services">BMS &amp; Automation</a></li>
+          <li><a href="services.html#services">Civil &amp; Interiors</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact Info -->
+      <div class="footer-col">
+        <h4>Head Office &amp; Contact</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>No. 85, 3rd Cross Street, Santro City, Sembarambakkam, Chennai, Tamil Nadu &ndash; 600124</span>
+          </li>
+          <li class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span><a href="tel:+919942252550">+91 99422 52550</a> &middot; <a href="tel:+919692774642">+91 96927 74642</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:bestmepengg@gmail.com">bestmepengg@gmail.com</a>
+          </li>
+        </ul>
+        <div class="footer-footprint">
+          <b>Global Operations:</b>
+          <span>India &middot; South Korea &middot; Singapore &middot; Sri Lanka &middot; Maldives &middot; Mauritius</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p class="copy">&copy; 2026 <span class="font-corsiva">Best MEP Pvt Ltd</span>. All rights reserved.</p>
+      <span class="footer-bottom-badge">Quality &middot; Safety &middot; On Time Execution</span>
+    </div>
   </div>
 </footer>
+
+<!-- ============ LIGHTBOX MODAL ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo Preview">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close photo preview">&times;</button>
+    <img src="" alt="" id="lightboxImg">
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- ============ BACK TO TOP BUTTON ============ -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Scroll to top">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+<!-- ============ TOAST NOTIFICATION ============ -->
+<div class="toast" id="toast">
+  <span>✓ Thank you! Your inquiry has been submitted.</span>
+</div>
+
+<!-- ============ SCRIPTS ============ -->
+<script>
+  // 1. Mobile navigation toggle & backdrop
+  const navToggle = document.getElementById('nav-toggle');
+  const navBackdrop = document.getElementById('navBackdrop');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  function closeMobileNav() {
+    if (navToggle) navToggle.checked = false;
+  }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMobileNav);
+  });
+
+  if (navBackdrop) {
+    navBackdrop.addEventListener('click', closeMobileNav);
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileNav();
+      closeLightbox();
+    }
+  });
+
+  // 2. Sticky Header elevation & Scroll Progress
+  const siteHeader = document.getElementById('siteHeader');
+  const scrollProgress = document.getElementById('scrollProgress');
+  const backToTop = document.getElementById('backToTop');
+
+  function handleScroll() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    // Progress bar width
+    if (scrollProgress && docHeight > 0) {
+      const scrolled = (scrollY / docHeight) * 100;
+      scrollProgress.style.width = scrolled + '%';
+    }
+
+    // Header scrolled class
+    if (siteHeader) {
+      if (scrollY > 30) {
+        siteHeader.classList.add('is-scrolled');
+      } else {
+        siteHeader.classList.remove('is-scrolled');
+      }
+    }
+
+    // Back to top visibility
+    if (backToTop) {
+      if (scrollY > 380) {
+        backToTop.classList.add('is-visible');
+      } else {
+        backToTop.classList.remove('is-visible');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+
+  // 3. Back to top click
+  if (backToTop) {
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // 5. Scroll Reveal with IntersectionObserver
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('is-revealed'));
+  }
+
+  // 6. Number counter animation for Stats
+  const counters = document.querySelectorAll('.counter');
+  let hasAnimatedCounters = false;
+
+  function animateCounters() {
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target'), 10) || 0;
+      const duration = 1600; // ms
+      const startTime = performance.now();
+
+      function updateNumber(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out quad
+        const easeProgress = 1 - (1 - progress) * (1 - progress);
+        const currentVal = Math.floor(easeProgress * target);
+        counter.textContent = currentVal;
+
+        if (progress < 1) {
+          requestAnimationFrame(updateNumber);
+        } else {
+          counter.textContent = target;
+        }
+      }
+
+      requestAnimationFrame(updateNumber);
+    });
+  }
+
+  const statsSection = document.getElementById('heroStats');
+  if (statsSection) {
+    if ('IntersectionObserver' in window) {
+      const statsObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasAnimatedCounters) {
+            hasAnimatedCounters = true;
+            animateCounters();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+      statsObserver.observe(statsSection);
+    } else {
+      animateCounters();
+    }
+  }
+
+  // 7. Lightbox for Gallery
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  function openLightbox(src, caption) {
+    if (!lightbox || !lightboxImg) return;
+    lightboxImg.src = src;
+    lightboxCaption.textContent = caption || '';
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.gallery-item, .sheet-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const src = item.getAttribute('data-src') || (item.querySelector('img') ? item.querySelector('img').src : '');
+      const caption = item.getAttribute('data-caption') || '';
+      if (src) openLightbox(src, caption);
+    });
+  });
+
+  if (lightboxClose) {
+    lightboxClose.addEventListener('click', closeLightbox);
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+  }
+
+  // 8. Contact form feedback
+  const contactForm = document.getElementById('contactForm');
+  const toast = document.getElementById('toast');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      // Show toast
+      if (toast) {
+        toast.classList.add('is-show');
+        setTimeout(() => {
+          toast.classList.remove('is-show');
+        }, 4000);
+      }
+    });
+  }
+
+  // Initial load calls
+  window.addEventListener('load', () => {
+    handleScroll();
+  });
+</script>
 
 </body>
 </html>

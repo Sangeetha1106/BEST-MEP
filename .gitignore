@@ -1,3 +1,13 @@
-node_modules/
-.DS_Store
+# System files
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Temporary editor files
+*.tmp
+*.bak
+*~
+.vscode/
+.idea/
